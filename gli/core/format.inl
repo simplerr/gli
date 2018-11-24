@@ -369,7 +369,7 @@ namespace detail
 
 	inline bool is_packed(format Format)
 	{
-		uint16_t flags = detail::get_format_info(Format).Flags;
+		glm::uint16_t flags = detail::get_format_info(Format).Flags;
 
 		return (flags & detail::CAP_PACKED8_BIT) != 0 || (flags & detail::CAP_PACKED16_BIT) != 0 || (flags & detail::CAP_PACKED32_BIT) != 0;
 	}

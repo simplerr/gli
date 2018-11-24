@@ -8,24 +8,24 @@ namespace gli
 	namespace detail
 	{
 		struct dxt1_block {
-			uint16_t Color0;
-			uint16_t Color1;
-			uint8_t Row[4];
+			glm::uint16_t Color0;
+			glm::uint16_t Color1;
+			glm::uint8_t Row[4];
 		};
 
 		struct dxt3_block {
-			uint16_t AlphaRow[4];
-			uint16_t Color0;
-			uint16_t Color1;
-			uint8_t Row[4];
+			glm::uint16_t AlphaRow[4];
+			glm::uint16_t Color0;
+			glm::uint16_t Color1;
+			glm::uint8_t Row[4];
 		};
 
 		struct dxt5_block {
-			uint8_t Alpha[2];
-			uint8_t AlphaBitmap[6];
-			uint16_t Color0;
-			uint16_t Color1;
-			uint8_t Row[4];
+			glm::uint8_t Alpha[2];
+			glm::uint8_t AlphaBitmap[6];
+			glm::uint16_t Color0;
+			glm::uint16_t Color1;
+			glm::uint8_t Row[4];
 		};
 
 		struct texel_block4x4 {
